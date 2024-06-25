@@ -1,34 +1,70 @@
 import React from 'react'
-import { Avatar, Rating } from '@mui/material'
-import { Box } from '@mui/system'
-import Grid from '@mui/system/Unstable_Grid/Grid'
+import Head from 'next/head'
+import Navigation from '../components/navigation'
+import Testimonial18 from '../components/testimonial18'
+import FAQ11 from '../components/faq11'
 
-const viewbook = () => {
+const viewbook = (props) => {
   return (
-    <div>
-      <Grid container spacing={2} gap={3}>
-        <Grid item xs={1}>
-          <Box>
-            <Avatar className='text-white ' style={{ backgroundColor: " rgb(29 78 216)" }} xs={{ width: 56, height: 56, bgcolor: 'blue' }}>
-              R
-            </Avatar>
-          </Box>
-        </Grid>
-        <Grid item xs={9} >
-          <div className='space-y-2 text-justify items-center'>
-            <div>
-              <p className='font-semibold text-lg'>Ram</p>
-              <p className='opacity-70'>April 5, 2023</p>
-            </div>
-            <Rating name="half-rating-read" defaultValue={4.5} precision={0.5} readOnly />
-            <p>Nice Produt, and i love this product</p>
-          </div>
-        </Grid>
-      </Grid>
-
-
-
-    </div>
+    <>
+      <div className='pricing-container'>
+        <Head>
+          <title>Marketing Event Page</title>
+          <meta property="og:title" content="Marketing Event Page" />
+        </Head>
+        <Navigation rootClassName="navigation-root-class-name1"></Navigation>
+        <div className="pricing-hero section-container">
+          <div className="pricing-blue-background"></div>
+        </div>
+        <Testimonial18></Testimonial18>
+        <FAQ11></FAQ11>
+      </div>
+      <style jsx>
+        {`
+          .pricing-container {
+            width: 100%;
+            display: flex;
+            overflow-x: clip;
+            min-height: 100vh;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
+          }
+          .pricing-hero {
+            position: relative;
+            padding-top: 128px;
+          }
+          .pricing-max-width {
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            z-index: 1;
+            align-items: stretch;
+          }
+          .pricing-blue-background {
+            top: 0px;
+            right: 0px;
+            width: 47%;
+            height: 100px;
+            position: absolute;
+            min-height: 80%;
+            background-size: cover;
+            background-image: url('/blue-background-1500w.png');
+            background-repeat: no-repeat;
+          }
+          @media (max-width: 991px) {
+            .pricing-max-width {
+              flex-direction: column;
+            }
+            .pricing-blue-background {
+              top: auto;
+              width: 100%;
+              bottom: 0px;
+              min-height: 40%;
+            }
+          }
+            
+        `}
+      </style>
+    </>
   )
 }
 

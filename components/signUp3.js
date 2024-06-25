@@ -1,5 +1,4 @@
 import React from 'react'
-// import Link from 'next/link'
 import PropTypes from 'prop-types'
 
 const signUp3 = (props) => {
@@ -79,7 +78,7 @@ const signUp3 = (props) => {
          
               <div className="sign-in3-divider2"></div>
             </div> */}
-                 <p className="thq-body-large">{props.content1}</p>
+            <p className="thq-body-large">{props.content1}</p>
             <a href={"/loginpage"} className="sign-in3-button1 thq-button-outline">
               <span className="sign-in3-text7 thq-body-small">
                 {props.action2}

@@ -5,7 +5,6 @@ import Navigation from '../components/navigation'
 import SpeakerCard from '../components/speaker-card'
 import NumbersCard from '../components/numbers-card'
 import Footer from '../components/footer'
-// import { Link } from 'react-router-dom'
 
 const Home = (props) => {
   return (
