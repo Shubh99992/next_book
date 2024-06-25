@@ -8,6 +8,7 @@ const Testimonial18 = (props) => {
       <div className="thq-section-padding">
         <div className="testimonial18-max-width thq-section-max-width">
           <div className="testimonial18-container thq-grid-2">
+            {/* Book Components */}
             <div className="testimonial18-section-title">
               <h2 className="thq-heading-2">{props.heading1}</h2>
               <div className="testimonial18-container1"></div>
@@ -51,6 +52,7 @@ const Testimonial18 = (props) => {
                 </svg>
               </div>
             </div>
+            {/* Book Components End */}
             <div className="testimonial18-content">
               <div className="testimonial18-column thq-card">
                 <div className="testimonial18-stars1">

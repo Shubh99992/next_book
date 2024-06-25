@@ -16,7 +16,6 @@ const Pricing = (props) => {
         </Head>
         <Navigation rootClassName="navigation-root-class-name1"></Navigation>
         <div className="pricing-hero section-container">
-          <div className="pricing-max-width max-content-container"></div>
           <div className="pricing-blue-background"></div>
         </div>
         <Testimonial18></Testimonial18>

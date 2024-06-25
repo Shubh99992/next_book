@@ -13,20 +13,26 @@ const Navigation = (props) => {
         className={`navigation-header ${props.rootClassName} `}
       >
         <div className="navigation-max-width">
-         
-         <Link href={"/"}>
-         <img
-            alt={props.imageAlt}
-            src={props.imageSrc}
-            className="navigation-image"
-          />
-         </Link>
-        
+
+          <Link href={"/"}>
+            <img
+              alt={props.imageAlt}
+              src={props.imageSrc}
+              className="navigation-image"
+              style={{
+                width: '140px',
+              height: '70px'
+              }}
+            />
+          </Link>
+
           <div className="navigation-nav">
             <NavigationLinks rootClassName="navigation-links-root-class-name17"></NavigationLinks>
-            <button className="navigation-register button-primary button button-md">
-              {props.button}
-            </button>
+            <Link href={"/loginpage"}>
+              <button className="navigation-register button-primary button button-md">
+                {props.button}
+              </button>
+            </Link>
           </div>
           <div data-role="BurgerMenu" className="navigation-burger-menu">
             <svg viewBox="0 0 1024 1024" className="navigation-icon">
